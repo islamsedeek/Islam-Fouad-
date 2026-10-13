@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" width="1600" height="980" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F3B57"/></marker>
+    <marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4E8A2E"/></marker>
+    <style>
+      .h1{font-size:38px;font-weight:700;fill:#1F3B57}
+      .h2{font-size:22px;font-weight:700;fill:#1F3B57}
+      .h3{font-size:17px;font-weight:700;fill:#1F3B57}
+      .sub{font-size:14px;fill:#5B6670}
+      .txt{font-size:14px;fill:#2E3A44}
+      .sm{font-size:13px;fill:#2E3A44}
+      .note{font-size:12.5px;fill:#5B6670}
+      .ax{stroke:#1F3B57;stroke-width:1.6;fill:none}
+      .pill{font-size:13.5px;font-weight:700;fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="#F1ECE3"/>
+
+  <!-- Header -->
+  <text x="40" y="68" class="h1">The PiCCO Dual Mechanisms</text>
+  <text x="40" y="96" class="sub">One calibrated system: intermittent thermodilution + continuous pulse contour analysis</text>
+  <text x="1560" y="58" text-anchor="end" font-size="22" font-weight="600" fill="#1F3B57">Almoosa Health</text>
+  <text x="1560" y="84" text-anchor="end" class="sub">ICU Department Academic Activities</text>
+  <line x1="40" y1="112" x2="1560" y2="112" stroke="#1F3B57" stroke-width="1.5"/>
+  <line x1="40" y1="112" x2="240" y2="112" stroke="#6AA84F" stroke-width="4"/>
+
+  <!-- LEFT: Setup & indicator pathway -->
+  <rect x="40" y="132" width="460" height="818" rx="14" fill="#FBF8F3" stroke="#DDD5C8"/>
+  <text x="64" y="170" class="h2">Setup &amp; pathway</text>
+  <text x="64" y="194" class="sub">CVC + PiCCO arterial catheter + monitor</text>
+
+  <g>
+    <!-- node 1 -->
+    <rect x="64" y="220" width="412" height="44" rx="22" fill="#2B5C8A"/>
+    <text x="90" y="248" font-size="16" font-weight="700" fill="#fff">1 · Cold saline bolus</text>
+    <text x="90" y="286" class="note">Known volume, injected by syringe</text>
+    <line x1="270" y1="296" x2="270" y2="330" class="ax" marker-end="url(#ah)"/>
+    <!-- node 2 -->
+    <rect x="64" y="336" width="412" height="44" rx="22" fill="#2B5C8A"/>
+    <text x="90" y="364" font-size="16" font-weight="700" fill="#fff">2 · Central venous catheter (CVC)</text>
+    <text x="90" y="402" class="note">Standard CVC with injectate sensor housing</text>
+    <line x1="270" y1="412" x2="270" y2="446" class="ax" marker-end="url(#ah)"/>
+    <!-- node 3 -->
+    <rect x="64" y="452" width="412" height="44" rx="22" fill="#6B3A8C"/>
+    <text x="90" y="480" font-size="16" font-weight="700" fill="#fff">3 · Right heart → Lungs → Left heart</text>
+    <text x="90" y="518" class="note">Indicator crosses the whole cardiopulmonary circuit</text>
+    <line x1="270" y1="528" x2="270" y2="562" class="ax" marker-end="url(#ah)"/>
+    <!-- node 4 -->
+    <rect x="64" y="568" width="412" height="44" rx="22" fill="#D2462A"/>
+    <text x="90" y="596" font-size="16" font-weight="700" fill="#fff">4 · PiCCO arterial catheter</text>
+    <text x="90" y="634" class="note">Femoral, brachial or axillary · thermistor + pressure</text>
+    <line x1="270" y1="644" x2="270" y2="678" class="ax" marker-end="url(#ah)"/>
+    <!-- node 5 -->
+    <rect x="64" y="684" width="412" height="44" rx="22" fill="#1F3B57"/>
+    <text x="90" y="712" font-size="16" font-weight="700" fill="#fff">5 · PiCCO monitor</text>
+    <text x="90" y="750" class="note">Cables: injectate sensor · arterial · pressure</text>
+  </g>
+
+  <rect x="64" y="790" width="412" height="136" rx="12" fill="#E3EDD6"/>
+  <text x="86" y="822" font-size="16" font-weight="700" fill="#3F6E22">How the two mechanisms fit</text>
+  <text class="sm" fill="#3F6E22">
+    <tspan x="86" y="850">Thermodilution (intermittent) sets the baseline</tspan>
+    <tspan x="86" y="872">and calibrates pulse contour analysis, which</tspan>
+    <tspan x="86" y="894">then tracks the patient continuously, beat by</tspan>
+    <tspan x="86" y="916">beat, until the next recalibration.</tspan>
+  </text>
+
+  <!-- CARD 1: Thermodilution -->
+  <g transform="translate(530,132)">
+    <rect width="505" height="300" rx="14" fill="#E6EEF2" stroke="#B9CED9"/>
+    <circle cx="38" cy="40" r="19" fill="#1F3B57"/>
+    <text x="38" y="47" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">1</text>
+    <text x="68" y="40" font-size="21" font-weight="700" fill="#1F3B57">Transpulmonary thermodilution</text>
+    <text x="68" y="62" font-size="14" font-weight="600" fill="#2B5C8A">Intermittent · static calibration</text>
+    <!-- chart -->
+    <text x="24" y="100" font-size="13" font-weight="700" fill="#1F3B57">Blood temperature change</text>
+    <line x1="34" y1="250" x2="34" y2="120" class="ax" marker-end="url(#ah)"/>
+    <line x1="34" y1="250" x2="200" y2="250" class="ax" marker-end="url(#ah)"/>
+    <path d="M36,248 C46,150 64,130 80,140 C100,155 120,235 196,247 L196,249 L36,249 z" fill="#C9B6DD" opacity="0.7"/>
+    <path d="M36,248 C46,150 64,130 80,140 C100,155 120,235 196,247" fill="none" stroke="#6B3A8C" stroke-width="2.2"/>
+    <text x="14" y="190" font-size="14" fill="#1F3B57">ΔT</text>
+    <text x="110" y="272" text-anchor="middle" font-size="12.5" fill="#5B6670">Time</text>
+    <!-- bullets -->
+    <g class="sm">
+      <circle cx="232" cy="113" r="3" fill="#2B5C8A"/>
+      <text x="242" y="118">Cold saline injected via the CVC</text>
+      <circle cx="232" cy="145" r="3" fill="#2B5C8A"/>
+      <text><tspan x="242" y="150">Travels right heart → lungs →</tspan><tspan x="242" y="169">left heart → aorta</tspan></text>
+      <circle cx="232" cy="196" r="3" fill="#2B5C8A"/>
+      <text><tspan x="242" y="201">Arterial thermistor records the</tspan><tspan x="242" y="220">washout curve</tspan></text>
+      <circle cx="232" cy="247" r="3" fill="#2B5C8A"/>
+      <text><tspan x="242" y="252">Stewart–Hamilton analysis →</tspan><tspan x="242" y="271">cardiac output + volumes</tspan></text>
+    </g>
+  </g>
+
+  <!-- calibration link -->
+  <line x1="1037" y1="282" x2="1061" y2="282" stroke="#4E8A2E" stroke-width="2.5" marker-end="url(#ahg)"/>
+
+  <!-- CARD 2: Pulse contour -->
+  <g transform="translate(1065,132)">
+    <rect width="495" height="300" rx="14" fill="#EEE6F0" stroke="#CDB8D6"/>
+    <circle cx="38" cy="40" r="19" fill="#6B3A8C"/>
+    <text x="38" y="47" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">2</text>
+    <text x="68" y="40" font-size="21" font-weight="700" fill="#1F3B57">Arterial pulse contour analysis</text>
+    <text x="68" y="62" font-size="14" font-weight="600" fill="#6B3A8C">Continuous · calibrated by <tspan fill="#4E8A2E">①</tspan></text>
+    <!-- chart -->
+    <text x="24" y="100" font-size="13" font-weight="700" fill="#1F3B57">Arterial pressure waveform</text>
+    <line x1="34" y1="250" x2="34" y2="120" class="ax" marker-end="url(#ah)"/>
+    <line x1="34" y1="250" x2="200" y2="250" class="ax" marker-end="url(#ah)"/>
+    <path d="M36,246 C44,246 46,148 54,148 C62,148 62,222 70,222 C76,222 76,208 82,208 C88,208 88,240 96,244 L110,246 C118,246 120,148 128,148 C136,148 136,222 144,222 C150,222 150,208 156,208 C162,208 162,240 170,244 L196,246" fill="none" stroke="#6B3A8C" stroke-width="2.2"/>
+    <text x="16" y="190" font-size="14" fill="#1F3B57">P</text>
+    <text x="110" y="272" text-anchor="middle" font-size="12.5" fill="#5B6670">Time (beat-to-beat)</text>
+    <!-- bullets -->
+    <g class="sm">
+      <circle cx="232" cy="113" r="3" fill="#6B3A8C"/>
+      <text><tspan x="242" y="118">Analyses shape and area of the</tspan><tspan x="242" y="137">waveform, beat by beat</tspan></text>
+      <circle cx="232" cy="164" r="3" fill="#6B3A8C"/>
+      <text><tspan x="242" y="169">Modified Wesseling algorithm →</tspan><tspan x="242" y="188">continuous SV and CO</tspan></text>
+      <circle cx="232" cy="215" r="3" fill="#6B3A8C"/>
+      <text><tspan x="242" y="220">Tracks pulse variation caused</tspan><tspan x="242" y="239">by mechanical ventilation</tspan></text>
+    </g>
+  </g>
+
+  <!-- KEY OUTPUTS grouped by clinical question -->
+  <text x="530" y="478" class="h2">Key outputs — by clinical question</text>
+  <rect x="1120" y="462" width="16" height="16" rx="4" fill="#2B5C8A"/>
+  <text x="1142" y="475" class="sm">① Thermodilution</text>
+  <rect x="1290" y="462" width="16" height="16" rx="4" fill="#6B3A8C"/>
+  <text x="1312" y="475" class="sm">② Pulse contour</text>
+
+  <!-- tile template: 330 x 210 -->
+  <!-- Row 1 -->
+  <g transform="translate(530,498)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Flow</text>
+    <text x="20" y="52" class="note">How much is the heart pumping?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="91" text-anchor="middle" class="pill">CO / CI</text>
+    <text x="136" y="91" class="sm">Cardiac output (baseline)</text>
+    <rect x="20" y="116" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="135" text-anchor="middle" class="pill">PCCO / PCCI</text>
+    <text x="136" y="135" class="sm">Continuous cardiac output</text>
+    <rect x="20" y="160" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="179" text-anchor="middle" class="pill">SV / SVI</text>
+    <text x="136" y="179" class="sm">Stroke volume</text>
+  </g>
+  <g transform="translate(880,498)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Preload</text>
+    <text x="20" y="52" class="note">How full is the heart?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="91" text-anchor="middle" class="pill">GEDV / GEDI</text>
+    <text class="sm"><tspan x="136" y="84">Global end-diastolic</tspan><tspan x="136" y="101">volume</tspan></text>
+    <rect x="20" y="124" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="143" text-anchor="middle" class="pill">ITBV / ITBI</text>
+    <text class="sm"><tspan x="136" y="136">Intrathoracic blood volume</tspan><tspan x="136" y="153">(heart + pulmonary vessels)</tspan></text>
+  </g>
+  <g transform="translate(1230,498)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Fluid responsiveness</text>
+    <text x="20" y="52" class="note">Will a fluid bolus raise output?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="91" text-anchor="middle" class="pill">SVV</text>
+    <text x="136" y="91" class="sm">Stroke volume variation</text>
+    <rect x="20" y="116" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="135" text-anchor="middle" class="pill">PPV</text>
+    <text x="136" y="135" class="sm">Pulse pressure variation</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(530,724)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Contractility</text>
+    <text x="20" y="52" class="note">How well does the heart squeeze?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="91" text-anchor="middle" class="pill">GEF</text>
+    <text x="136" y="91" class="sm">Global ejection fraction</text>
+    <rect x="20" y="116" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="135" text-anchor="middle" class="pill">CFI</text>
+    <text x="136" y="135" class="sm">Cardiac function index</text>
+    <rect x="20" y="160" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="179" text-anchor="middle" class="pill">dPmax</text>
+    <text class="sm"><tspan x="136" y="172">Arterial upstroke slope</tspan><tspan x="136" y="189">(LV surrogate)</tspan></text>
+  </g>
+  <g transform="translate(880,724)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Afterload</text>
+    <text x="20" y="52" class="note">What is the vascular tone?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#6B3A8C"/><text x="72" y="91" text-anchor="middle" class="pill">SVR / SVRI</text>
+    <text class="sm"><tspan x="136" y="84">Systemic vascular</tspan><tspan x="136" y="101">resistance</tspan></text>
+  </g>
+  <g transform="translate(1230,724)">
+    <rect width="330" height="210" rx="12" fill="#FBF8F3" stroke="#DDD5C8"/>
+    <text x="20" y="32" class="h3">Lung water</text>
+    <text x="20" y="52" class="note">Is there pulmonary oedema?</text>
+    <rect x="20" y="72" width="104" height="28" rx="14" fill="#2B5C8A"/><text x="72" y="91" text-anchor="middle" class="pill">EVLW / ELWI</text>
+    <text x="136" y="91" class="sm">Extravascular lung water</text>
+  </g>
+
+  <text x="530" y="960" class="note">Paired abbreviations: absolute value / value indexed to body size (e.g. CO / CI).</text>
+</svg>
