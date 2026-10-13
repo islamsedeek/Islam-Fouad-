@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&amp;family=Fira+Sans+Condensed:wght@700;800&amp;display=swap');
+      text{font-family:'Fira Sans','Segoe UI','Ubuntu','Helvetica Neue',Arial,sans-serif}
+      .title{font-family:'Fira Sans Condensed','Fira Sans',Arial,sans-serif;font-size:58px;font-weight:800;fill:#0E2C4E;letter-spacing:-0.5px}
+      .navy{fill:#0E2C4E}
+      .t{font-size:14.5px;fill:#1E2B36}
+      .d{font-size:14.5px;fill:#25313B}
+      .k{font-size:17px;font-weight:700;fill:#0E2C4E}
+      .kp{font-size:17px;font-weight:700;fill:#2E1050}
+      .ax{stroke:#0E2C4E;stroke-width:1.8;fill:none}
+      .axp{stroke:#2E1050;stroke-width:1.8;fill:none}
+    </style>
+    <marker id="arN" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0E2C4E"/></marker>
+    <marker id="arP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E1050"/></marker>
+    <linearGradient id="calib" x1="0" x2="1">
+      <stop offset="0" stop-color="#5DA83E"/><stop offset="1" stop-color="#3C8A2C"/>
+    </linearGradient>
+    <linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C7A9E3"/><stop offset="1" stop-color="#E9DDF5"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D3C2"/><stop offset="1" stop-color="#F9E2D6"/>
+    </linearGradient>
+    <!-- reusable icons -->
+    <g id="iHeart">
+      <path d="M0,-6 C-4,-18 -22,-16 -22,-2 C-22,10 -8,18 0,26 C8,18 22,10 22,-2 C22,-16 4,-18 0,-6 z" fill="#EF6F86"/>
+      <path d="M-8,-14 C-8,-22 -4,-24 -2,-20 M4,-16 C4,-23 9,-24 10,-19" stroke="#EF6F86" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M-12,-4 C-14,4 -8,10 -4,12" stroke="#F7A7B6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="iVent">
+      <path d="M-24,-16 C-22,4 -12,20 0,26 C12,20 22,4 24,-16 C16,-12 10,-8 6,-2 L0,10 L-6,-2 C-10,-8 -16,-12 -24,-16 z" fill="#7A3FB0"/>
+      <path d="M-14,-10 C-12,4 -6,14 0,18 C6,14 12,4 14,-10" fill="none" stroke="#C9A6E6" stroke-width="3"/>
+    </g>
+    <g id="iDrop">
+      <path d="M0,-24 C8,-10 18,2 18,12 C18,22 10,28 0,28 C-10,28 -18,22 -18,12 C-18,2 -8,-10 0,-24 z" fill="#E85B7C"/>
+      <path d="M-8,10 C-9,16 -5,21 0,22" stroke="#F7B2C2" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="iLungs">
+      <path d="M-4,-22 L-4,-4 C-8,-6 -10,-12 -14,-14 C-24,-12 -28,6 -26,22 C-25,28 -18,28 -10,24 C-5,22 -4,16 -4,8 z" fill="#9B66C9"/>
+      <path d="M4,-22 L4,-4 C8,-6 10,-12 14,-14 C24,-12 28,6 26,22 C25,28 18,28 10,24 C5,22 4,16 4,8 z" fill="#9B66C9"/>
+      <rect x="-3" y="-26" width="6" height="16" rx="3" fill="#9B66C9"/>
+    </g>
+    <g id="iTarget">
+      <circle r="23" fill="#EBDDF6" stroke="#5B2A8C" stroke-width="3.5"/>
+      <circle r="15" fill="none" stroke="#5B2A8C" stroke-width="2.5"/>
+      <path d="M0,0 L0,-15 A15,15 0 0 1 13,7 z" fill="#8E5BC0"/>
+      <circle r="4" fill="#5B2A8C"/>
+    </g>
+    <g id="iGauge">
+      <path d="M-22,10 A23,23 0 1 1 22,10" fill="none" stroke="#4A1A7A" stroke-width="4" stroke-linecap="round"/>
+      <path d="M-14,-12 L-10,-8 M0,-19 L0,-14 M14,-12 L10,-8" stroke="#4A1A7A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0,2 L11,-9" stroke="#4A1A7A" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="0" cy="2" r="4" fill="#4A1A7A"/>
+    </g>
+    <g id="iGaugeP">
+      <path d="M-22,10 A23,23 0 1 1 22,10" fill="none" stroke="#7A2E8E" stroke-width="4" stroke-linecap="round"/>
+      <path d="M-16,4 A17,17 0 0 1 -8,-14" fill="none" stroke="#E85B7C" stroke-width="4"/>
+      <path d="M0,2 L12,-10" stroke="#7A2E8E" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="0" cy="2" r="4" fill="#7A2E8E"/>
+    </g>
+    <g id="iWave">
+      <path d="M-32,4 L-20,4 L-16,-4 L-12,8 L-8,-18 L-3,22 L2,-12 L6,10 L10,0 L14,6 L18,-6 L22,4 L32,4" fill="none" stroke="#7A2E8E" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+    <g id="iVessel">
+      <g stroke="#E85B7C" stroke-width="5" stroke-linecap="round" fill="none">
+        <path d="M-24,20 L-6,4 L10,-16"/><path d="M-6,4 L18,10"/><path d="M10,-16 L22,-14"/><path d="M10,-16 L12,-26"/><path d="M-14,12 L-20,0"/><path d="M8,8 L12,20"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect width="1672" height="941" fill="#F8F4EA"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="50" y="70" class="title">The Picco dual mechanisms</text>
+  <line x1="50" y1="94" x2="1620" y2="94" stroke="#26476B" stroke-width="2"/>
+  <line x1="50" y1="94" x2="320" y2="94" stroke="#5DA83E" stroke-width="4"/>
+
+  <text x="1560" y="36" text-anchor="end" font-size="22" font-weight="600" fill="#0E2C4E" unicode-bidi="plaintext">الموسى الصحية</text>
+  <text x="1562" y="60" text-anchor="end" font-size="22" font-weight="500" fill="#0E2C4E">Almoosa Health</text>
+  <text x="1618" y="85" text-anchor="end" font-size="15.5" fill="#33475A">ICU Department Academic Activities</text>
+  <!-- leaf tree logo -->
+  <g transform="translate(1590,40)" fill="#5DA83E">
+    <rect x="-1.5" y="-4" width="3" height="28" rx="1.5"/>
+    <ellipse cx="0" cy="-22" rx="3.5" ry="7"/>
+    <ellipse cx="-8" cy="-16" rx="3.5" ry="7" transform="rotate(-30 -8 -16)"/>
+    <ellipse cx="8" cy="-16" rx="3.5" ry="7" transform="rotate(30 8 -16)"/>
+    <ellipse cx="-14" cy="-6" rx="3.5" ry="7" transform="rotate(-55 -14 -6)"/>
+    <ellipse cx="14" cy="-6" rx="3.5" ry="7" transform="rotate(55 14 -6)"/>
+    <ellipse cx="-9" cy="2" rx="3.5" ry="7" transform="rotate(-40 -9 2)"/>
+    <ellipse cx="9" cy="2" rx="3.5" ry="7" transform="rotate(40 9 2)"/>
+    <ellipse cx="-17" cy="8" rx="3" ry="6" transform="rotate(-70 -17 8)"/>
+    <ellipse cx="17" cy="8" rx="3" ry="6" transform="rotate(70 17 8)"/>
+    <ellipse cx="-6" cy="12" rx="3" ry="6" transform="rotate(-40 -6 12)"/>
+    <ellipse cx="6" cy="12" rx="3" ry="6" transform="rotate(40 6 12)"/>
+  </g>
+
+  <!-- ===== LEFT COLUMN ===== -->
+  <!-- Shared setup header -->
+  <rect x="34" y="117" width="527" height="401" rx="10" fill="#FBF6EE" stroke="#E2D7C6"/>
+  <path d="M44,117 H551 A10,10 0 0 1 561,127 V182 H34 V127 A10,10 0 0 1 44,117 z" fill="#13416B"/>
+  <text x="54" y="146" font-size="27" font-weight="700" fill="#fff">Shared setup</text>
+  <text x="54" y="172" font-size="18.5" fill="#fff">CVC + PiCCO arterial catheter + monitor</text>
+
+  <!-- illustration -->
+  <g id="illustration">
+    <!-- body silhouette -->
+    <g fill="url(#skin)" opacity="0.9">
+      <ellipse cx="447" cy="218" rx="24" ry="28"/>
+      <rect x="436" y="240" width="22" height="20"/>
+      <path d="M380,262 C400,252 425,252 447,254 C469,252 494,252 514,262 C530,272 534,300 536,330 C540,370 548,400 558,430 L548,436 C534,402 524,372 516,340 L512,380 C514,420 506,470 500,515 L394,515 C388,470 380,420 382,380 L378,340 C370,372 360,402 346,436 L336,430 C346,400 354,370 358,330 C360,300 364,272 380,262 z"/>
+    </g>
+    <!-- ribcage -->
+    <g fill="none" stroke="#D9A69A" stroke-width="2.2" opacity="0.9">
+      <path d="M447,270 C420,272 402,282 398,296 M447,270 C474,272 492,282 496,296"/>
+      <path d="M447,284 C418,286 398,298 396,314 M447,284 C476,286 496,298 498,314"/>
+      <path d="M447,298 C418,300 400,314 398,330 M447,298 C476,300 494,314 496,330"/>
+      <path d="M447,312 C420,314 404,328 404,344 M447,312 C474,314 490,328 490,344"/>
+      <path d="M447,326 C424,328 410,340 412,356 M447,326 C470,328 484,340 482,356"/>
+      <line x1="447" y1="266" x2="447" y2="335" stroke-width="4"/>
+    </g>
+    <!-- veins (blue) -->
+    <g fill="none" stroke="#2A4FA8" stroke-linecap="round">
+      <path d="M440,250 L440,520" stroke-width="7"/>
+      <path d="M440,262 C420,264 395,268 375,280" stroke-width="5"/>
+      <path d="M440,262 C462,266 492,268 512,280" stroke-width="4"/>
+      <path d="M375,280 C362,320 356,370 348,420" stroke-width="2.5"/>
+      <path d="M512,282 C528,320 536,370 546,420" stroke-width="2.5"/>
+      <path d="M438,420 C430,450 426,480 424,515" stroke-width="5"/>
+      <path d="M440,420 C450,450 456,480 460,515" stroke-width="4"/>
+    </g>
+    <!-- arteries (red) -->
+    <g fill="none" stroke="#E2452B" stroke-linecap="round">
+      <path d="M452,296 C454,280 446,270 438,272 C432,274 432,282 436,288" stroke-width="5"/>
+      <path d="M452,296 L452,520" stroke-width="6"/>
+      <path d="M446,272 C424,272 400,276 380,286 C366,320 360,370 352,425" stroke-width="2.5"/>
+      <path d="M446,272 C470,272 494,276 512,286 C530,320 538,370 548,425" stroke-width="2.5"/>
+      <path d="M452,420 C444,450 438,480 434,515" stroke-width="5"/>
+      <path d="M454,420 C464,450 470,480 474,515" stroke-width="5"/>
+      <path d="M452,360 C430,364 410,372 400,380 M452,360 C474,364 490,372 498,380" stroke-width="1.8"/>
+    </g>
+    <!-- heart -->
+    <path d="M462,272 C450,262 434,272 440,290 C444,302 456,312 466,318 C478,308 488,296 488,284 C488,270 474,264 462,272 z" fill="#D9402A"/>
+    <path d="M448,280 C446,292 454,302 462,308" stroke="#F08A70" stroke-width="2.5" fill="none"/>
+    <path d="M460,276 C462,290 466,304 466,316" stroke="#2A4FA8" stroke-width="2" fill="none"/>
+
+    <!-- flush bag -->
+    <rect x="114" y="210" width="12" height="8" rx="2" fill="#B9A49A"/>
+    <path d="M106,218 H134 V258 C134,264 128,268 120,268 C112,268 106,264 106,258 z" fill="#C7AFA6" stroke="#9C8278" stroke-width="1.5"/>
+    <rect x="118" y="268" width="4" height="14" fill="#9C8278"/>
+    <path d="M134,240 L128,240" stroke="#555" stroke-width="1"/>
+    <text x="132" y="239" font-size="15.5" fill="#1E2B36">Flush bag</text>
+
+    <!-- tubing -->
+    <g fill="none" stroke="#7D7D7D" stroke-width="1.8">
+      <path d="M120,282 L120,340 L72,412 L72,470 L146,470"/>
+      <path d="M145,432 L180,432 L210,432"/>
+      <path d="M210,432 L266,432 L266,293 L320,293"/>
+      <path d="M145,448 L230,448 L230,462 L276,462"/>
+      <path d="M302,462 L330,462 L408,452"/>
+      <path d="M145,440 L196,440 C220,440 240,456 270,458"/>
+      <path d="M336,298 L370,286"/>
+    </g>
+    <!-- cable connectors on monitor side -->
+    <g>
+      <rect x="182" y="426" width="22" height="12" rx="4" fill="#C7C2BC" stroke="#888"/>
+      <circle cx="196" cy="432" r="4" fill="#E2452B"/>
+      <rect x="264" y="456" width="40" height="13" rx="4" fill="#C7C2BC" stroke="#888"/>
+      <rect x="276" y="452" width="12" height="20" rx="2" fill="#B0A9A2"/>
+      <circle cx="282" cy="455" r="3" fill="#E2452B"/>
+    </g>
+    <!-- red arterial line into femoral artery -->
+    <path d="M330,462 L400,456 L410,480 L428,500" stroke="#E2452B" stroke-width="2.5" fill="none"/>
+    <path d="M408,454 L460,430 L476,416" stroke="#E2452B" stroke-width="2.5" fill="none"/>
+    <circle cx="412" cy="452" r="6" fill="#F6A28E" stroke="#E2452B" stroke-width="1.5"/>
+    <!-- CVC & syringe -->
+    <path d="M320,293 L362,288" stroke="#7D7D7D" stroke-width="2" fill="none"/>
+    <circle cx="372" cy="283" r="9" fill="#B9C8DD" stroke="#4A6FA8" stroke-width="2"/>
+    <circle cx="372" cy="283" r="3.5" fill="#4A6FA8"/>
+    <path d="M362,270 L352,258 M366,268 L362,254 M372,272 L374,258" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="352" cy="258" r="2.5" fill="#bbb"/><circle cx="362" cy="254" r="2.5" fill="#bbb"/><circle cx="374" cy="258" r="2.5" fill="#bbb"/>
+    <g>
+      <rect x="333" y="292" width="6" height="8" fill="#2A4FA8"/>
+      <rect x="331" y="300" width="10" height="26" rx="2" fill="#DDE6F2" stroke="#2A4FA8" stroke-width="1.5"/>
+      <rect x="333" y="306" width="6" height="16" fill="#2A4FA8"/>
+      <line x1="336" y1="326" x2="336" y2="340" stroke="#555" stroke-width="2"/>
+      <line x1="330" y1="340" x2="342" y2="340" stroke="#555" stroke-width="2"/>
+      <circle cx="336" cy="292" r="3" fill="#4A6FA8"/>
+      <path d="M318,290 L354,290" stroke="#999" stroke-width="2"/>
+    </g>
+    <text x="364" y="254" font-size="16" font-weight="700" fill="#0E2C4E">CVC</text>
+    <!-- monitor -->
+    <rect x="66" y="418" width="80" height="52" rx="6" fill="#BFB6AE" stroke="#7D7268" stroke-width="2"/>
+    <rect x="72" y="412" width="12" height="7" rx="1" fill="#7D7268"/><rect x="128" y="412" width="12" height="7" rx="1" fill="#7D7268"/>
+    <rect x="76" y="426" width="58" height="34" rx="3" fill="#FFF5F2" stroke="#7D7268"/>
+    <path d="M80,446 L88,446 L91,436 L95,452 L99,440 L103,448 L107,436 L111,452 L115,442 L119,448 L130,448" fill="none" stroke="#E2452B" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="72" y="499" font-size="15.5" font-weight="600" fill="#1E2B36">Monitor</text>
+    <text x="300" y="497" font-size="15.5" font-weight="700" fill="#E2302B">PiCCO catheter</text>
+  </g>
+
+  <!-- Central venous line card -->
+  <rect x="34" y="530" width="527" height="84" rx="10" fill="#DDEBF8"/>
+  <g transform="translate(78,572)" stroke="#2A4FA8" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M-28,-20 L-4,-14 L22,-26"/>
+    <circle cx="-4" cy="-14" r="5" fill="#2A4FA8"/>
+    <path d="M-2,-10 L0,30"/>
+    <path d="M8,-8 L10,8 L6,20"/>
+    <circle cx="10" cy="8" r="3" fill="#2A4FA8"/>
+    <path d="M-10,-8 L-8,10"/>
+  </g>
+  <text x="132" y="558" font-size="21" font-weight="700" fill="#0E2C4E">Central venous line</text>
+  <text x="132" y="582" font-size="17" fill="#25313B">Standard CVC with injectate sensor housing</text>
+  <text x="132" y="603" font-size="17" fill="#25313B">and thermodilution syringe.</text>
+
+  <!-- Arterial line card -->
+  <rect x="34" y="626" width="527" height="92" rx="10" fill="#FADBD5"/>
+  <g transform="translate(70,672)" stroke="#E2302B" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M0,-38 L0,-18"/>
+    <rect x="-7" y="-18" width="14" height="22" rx="3"/>
+    <path d="M0,4 L0,30 C0,36 6,36 12,36 L40,36"/>
+    <path d="M-4,-10 L4,-10 M-4,-4 L4,-4" stroke-width="2"/>
+  </g>
+  <text x="136" y="658" font-size="21" font-weight="700" fill="#E2302B">Arterial line</text>
+  <text x="136" y="683" font-size="17" fill="#25313B">PiCCO catheter available in different sizes:</text>
+  <text x="136" y="704" font-size="17" fill="#25313B">femoral, brachial or axillary artery.</text>
+
+  <!-- Connections card -->
+  <rect x="34" y="730" width="527" height="88" rx="10" fill="#E2EED7"/>
+  <g transform="translate(80,774)" stroke="#3E8A2E" stroke-width="3.2" fill="none" stroke-linecap="round">
+    <circle cx="20" cy="-26" r="7"/>
+    <circle cx="20" cy="-26" r="2.5" fill="#3E8A2E"/>
+    <path d="M14,-22 C-6,-14 -24,-10 -24,4 C-24,18 -12,20 4,20"/>
+    <rect x="4" y="14" width="14" height="12" rx="2" fill="#3E8A2E"/>
+    <path d="M18,17 L26,17 M18,23 L26,23"/>
+  </g>
+  <text x="136" y="761" font-size="21" font-weight="700" fill="#0E2C4E">Connections to the monitor</text>
+  <text x="136" y="785" font-size="17" fill="#25313B">Injectate sensor cable · Arterial connection cable ·</text>
+  <text x="136" y="806" font-size="17" fill="#25313B">Pressure connection cable</text>
+
+  <!-- One calibrated monitoring system -->
+  <rect x="34" y="828" width="527" height="88" rx="10" fill="#3B7D2C"/>
+  <g transform="translate(84,870)" stroke="#fff" stroke-width="3" fill="none" stroke-linejoin="round">
+    <rect x="-26" y="-26" width="52" height="40" rx="4"/>
+    <rect x="-20" y="-20" width="40" height="28" rx="2" stroke-width="1.8"/>
+    <path d="M-16,0 L-8,0 L-4,-12 L2,4 L6,-6 L16,-6" stroke-width="2"/>
+    <path d="M-8,14 L-10,24 L10,24 L8,14"/>
+  </g>
+  <text x="138" y="859" font-size="23" font-weight="700" fill="#fff">One calibrated monitoring system</text>
+  <text x="138" y="883" font-size="17.5" fill="#fff">Intermittent thermodilution + continuous</text>
+  <text x="138" y="904" font-size="17.5" fill="#fff">pulse contour analysis</text>
+
+  <!-- ===== PANEL 1: THERMODILUTION ===== -->
+  <rect x="573" y="117" width="1067" height="418" rx="14" fill="#E9F4F8" stroke="#A8D4E6" stroke-width="1.5"/>
+  <circle cx="614" cy="148" r="27" fill="#0E2C4E"/>
+  <text x="614" y="160" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">1</text>
+  <text x="656" y="149" font-size="30" font-weight="700" class="navy">Transpulmonary thermodilution</text>
+  <text x="658" y="174" font-size="21" font-weight="700" class="navy">Static calibration</text>
+
+  <text x="603" y="203" font-size="19" font-weight="700" class="navy">Blood temperature change</text>
+  <text x="720" y="227" font-size="15.5" fill="#1E2B36">Cold-saline injection</text>
+  <line x1="634" y1="324" x2="634" y2="214" class="ax" marker-end="url(#arN)"/>
+  <line x1="634" y1="324" x2="930" y2="324" class="ax" marker-end="url(#arN)"/>
+  <path d="M636,322 C650,280 662,240 690,240 C720,240 760,290 800,308 C840,322 880,322 920,322 L920,323 L636,323 z" fill="url(#curveFill)"/>
+  <path d="M636,322 C650,280 662,240 690,240 C720,240 760,290 800,308 C840,322 880,322 920,322" fill="none" stroke="#4A1A7A" stroke-width="2.4"/>
+  <line x1="657" y1="222" x2="657" y2="296" stroke="#0E2C4E" stroke-width="1.6" marker-end="url(#arN)"/>
+  <text x="602" y="274" font-size="17" fill="#0E2C4E">ΔT</text>
+  <text x="752" y="342" font-size="15" fill="#1E2B36">Time</text>
+
+  <!-- explanation box -->
+  <rect x="1101" y="135" width="527" height="201" rx="10" fill="#fff" fill-opacity="0.85" stroke="#CFE3EC"/>
+  <g class="t">
+    <text x="1114" y="157">A known volume of cold saline is injected into the CVC.  The cold fluid travels</text>
+    <text x="1114" y="177">through the right atrium and ventricle, across the pulmonary circulation,</text>
+    <text x="1114" y="197">and into the left heart before entering the systemic arterial system.</text>
+    <line x1="1114" y1="212" x2="1610" y2="212" stroke="#E2ECF1"/>
+    <text x="1114" y="234">The arterial-catheter thermistor measures the blood temperature change</text>
+    <text x="1114" y="254">over time, generating a thermodilution washout curve.</text>
+    <line x1="1114" y1="270" x2="1610" y2="270" stroke="#E2ECF1"/>
+    <text x="1114" y="294">Stewart–Hamilton analysis of this curve provides volumetric parameters</text>
+    <text x="1114" y="314">(fluid in the heart and lungs) and intermittent cardiac output.</text>
+  </g>
+
+  <!-- key outputs 1 -->
+  <rect x="588" y="356" width="1040" height="168" rx="10" fill="#fff" fill-opacity="0.75" stroke="#D3E6C4"/>
+  <path d="M598,356 H1618 A10,10 0 0 1 1628,366 V385 H588 V366 A10,10 0 0 1 598,356 z" fill="#DCEDC8"/>
+  <text x="602" y="377" font-size="21" font-weight="700" fill="#2F6E1F">Key outputs</text>
+  <text x="737" y="377" font-size="16" fill="#2F4A22">Intermittent / from thermodilution</text>
+  <line x1="912" y1="392" x2="912" y2="520" stroke="#E2E8DC"/>
+  <line x1="1262" y1="392" x2="1262" y2="520" stroke="#E2E8DC"/>
+
+  <use href="#iHeart" x="631" y="414"/>
+  <text x="675" y="410" class="k">CO / CI</text>
+  <text x="675" y="431" class="d">Cardiac output / index;</text>
+  <text x="675" y="449" class="d">intermittent baseline</text>
+
+  <use href="#iVent" x="955" y="414"/>
+  <text x="1005" y="410" class="k">GEDV / GEDI</text>
+  <text x="1005" y="431" class="d">Global end-diastolic volume / index;</text>
+  <text x="1005" y="449" class="d">cardiac preload</text>
+
+  <use href="#iDrop" x="1321" y="413"/>
+  <text x="1376" y="410" class="k">ITBV / ITBI</text>
+  <text x="1376" y="431" class="d">Intrathoracic blood volume / index;</text>
+  <text x="1376" y="449" class="d" font-size="14" textLength="246" lengthAdjust="spacingAndGlyphs">total blood in heart + pulmonary vessels</text>
+
+  <use href="#iLungs" x="631" y="486"/>
+  <text x="675" y="481" class="k">EVLW / ELWI</text>
+  <text x="675" y="501" class="d">Extravascular lung water / index;</text>
+  <text x="675" y="519" class="d">pulmonary edema</text>
+
+  <use href="#iTarget" x="956" y="486"/>
+  <text x="1005" y="481" class="k">GEF</text>
+  <text x="1005" y="501" class="d">Global ejection fraction;</text>
+  <text x="1005" y="519" class="d">contractility</text>
+
+  <use href="#iGauge" x="1321" y="486"/>
+  <text x="1376" y="481" class="k">CFI</text>
+  <text x="1376" y="501" class="d">Cardiac function index;</text>
+  <text x="1376" y="519" class="d">contractility</text>
+
+  <!-- ===== CALIBRATION BANNER ===== -->
+  <path d="M622,538 L622,556" stroke="#3E8A2E" stroke-width="5"/>
+  <path d="M612,553 L632,553 L622,566 z" fill="#3E8A2E"/>
+  <path d="M652,538 L1600,538 L1615,552 L1600,566 L652,566 C648,566 646,564 646,560 L646,544 C646,540 648,538 652,538 z" fill="url(#calib)"/>
+  <text x="682" y="559" font-size="20.5" font-weight="700" fill="#fff">Calibration: thermodilution calibrates pulse contour analysis</text>
+
+  <!-- ===== PANEL 2: PULSE CONTOUR ===== -->
+  <rect x="573" y="575" width="1067" height="345" rx="14" fill="#F2E8F7" stroke="#D3BCE3" stroke-width="1.5"/>
+  <circle cx="621" cy="603" r="27" fill="#4A1A7A"/>
+  <text x="621" y="615" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">2</text>
+  <text x="659" y="603" font-size="30" font-weight="700" fill="#4A1A7A">Arterial pulse contour analysis</text>
+  <text x="660" y="629" font-size="19.5" font-weight="700" fill="#4A1A7A">Continuous monitoring</text>
+
+  <text x="603" y="657" font-size="19" font-weight="700" fill="#2E1050">Arterial pressure waveform</text>
+  <line x1="624" y1="724" x2="624" y2="668" class="axp" marker-end="url(#arP)"/>
+  <line x1="624" y1="724" x2="1032" y2="724" class="axp" marker-end="url(#arP)"/>
+  <path d="M626,720 C634,720 638,704 646,704 C654,704 656,718 662,718 C672,718 680,676 690,676 C700,676 702,708 710,708 C716,708 718,700 724,700 C730,700 732,714 740,716 C750,716 758,676 768,676 C778,676 780,708 788,708 C794,708 796,700 802,700 C808,700 812,714 820,716 C832,716 840,716 848,712 C856,700 860,676 870,676 C880,676 882,708 890,712 C900,716 910,720 940,720" fill="none" stroke="#4A1A7A" stroke-width="2.4" stroke-linejoin="round"/>
+  <text x="602" y="691" font-size="17" fill="#2E1050">P</text>
+  <text x="748" y="742" font-size="14.5" fill="#1E2B36">Time (beat-to-beat)</text>
+
+  <rect x="1068" y="612" width="560" height="130" rx="10" fill="#fff" fill-opacity="0.85" stroke="#E2D3EC"/>
+  <g class="t">
+    <text x="1082" y="633">Once calibrated by the thermodilution curve, the PiCCO monitor continuously</text>
+    <text x="1082" y="652">analyses the shape and area under the arterial pressure waveform, beat by beat.</text>
+    <line x1="1082" y1="663" x2="1612" y2="663" stroke="#EDE3F2"/>
+    <text x="1082" y="684">A modified Wesseling algorithm calculates continuous stroke volume and</text>
+    <text x="1082" y="706">continuous cardiac output, and tracks dynamic variations in the pulse caused</text>
+    <text x="1082" y="728">by mechanical ventilation.</text>
+  </g>
+
+  <!-- key outputs 2 -->
+  <rect x="588" y="752" width="1040" height="160" rx="10" fill="#fff" fill-opacity="0.75" stroke="#E2D0EF"/>
+  <path d="M598,752 H1618 A10,10 0 0 1 1628,762 V781 H588 V762 A10,10 0 0 1 598,752 z" fill="#E4D2F0"/>
+  <text x="602" y="774" font-size="21" font-weight="700" fill="#4A1A7A">Key outputs</text>
+  <text x="732" y="774" font-size="16" fill="#3A2550">Continuous / from pulse contour</text>
+  <line x1="912" y1="788" x2="912" y2="906" stroke="#EAE0F0"/>
+  <line x1="1270" y1="788" x2="1270" y2="906" stroke="#EAE0F0"/>
+
+  <use href="#iHeart" x="633" y="811"/>
+  <text x="683" y="804" class="kp">PCCO / PCCI</text>
+  <text x="683" y="822" class="d">Pulse continuous</text>
+  <text x="683" y="839" class="d">cardiac output / index</text>
+
+  <use href="#iVent" x="950" y="812"/>
+  <text x="1008" y="804" class="kp">SV / SVI</text>
+  <text x="1008" y="822" class="d">Continuous stroke volume / index</text>
+
+  <use href="#iWave" x="1332" y="812"/>
+  <text x="1392" y="803" class="kp">SVV</text>
+  <text x="1392" y="820" class="d">Stroke volume variation;</text>
+  <text x="1392" y="837" class="d">fluid responsiveness</text>
+
+  <use href="#iLungs" x="633" y="874"/>
+  <text x="683" y="866" class="kp">PPV</text>
+  <text x="683" y="884" class="d">Pulse pressure variation;</text>
+  <text x="683" y="901" class="d">fluid responsiveness</text>
+
+  <use href="#iVessel" x="948" y="872"/>
+  <text x="1006" y="861" class="kp">SVR / SVRI</text>
+  <text x="1006" y="881" class="d">Systemic vascular resistance / index;</text>
+  <text x="1006" y="898" class="d">afterload / vascular tone</text>
+
+  <use href="#iGaugeP" x="1333" y="875"/>
+  <text x="1392" y="864" class="kp">dPmax</text>
+  <text x="1392" y="883" class="d">Arterial pressure upstroke slope;</text>
+  <text x="1392" y="900" class="d">surrogate for LV contractility</text>
+</svg>
